@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="/css/adminlogin.css" >   
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap/js/bootstrap.min.js">
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a  href="/" ><i class="fa fa-fw fa-home"></i> HOME</a></li>
+      <li><a href="/questionpaper">QUESTION PAPER</a></li>
+      <li><a href="/notes">NOTES</a></li>
+       <li><a href="/syllabus">SYLLABUS</a></li>
+        <li><a href="/gold">GOLD</a></li>
+        <li><a href="/contactus"><i class="fa fa-fw fa-envelope"></i> CONTACT US</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-envelope"></i> ABOUT US</a></li>
+   
+<li><form class="navbar-form navbar-left" action="/action_page.php">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    
+  </div>
+</form>
+</li>
+   </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      
+    </ul>
+
+  </div>
+</nav>
+    <div class="login-box">
+    <img src="/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+            <form th:action="@{/login}" method="POST">
+            <p>UserName</p>
+            <input type="text" id="emailid" name="emailid" placeholder="Enter Email Id" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <p>Password</p>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            <input type="submit" name="submit" value="Login">
+           </form>
+        
+        </div>
+    
+    </body>
+</html>

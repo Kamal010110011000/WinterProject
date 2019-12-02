@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Question4All</title>
+	<style>
+body { color: #000; padding: 0; margin: 0; }
+.container { width: 1000px; margin: auto; padding-top: 1em; }
+.container .ism-slider { margin-left: auto; margin-right: auto; }
+</style>
+	
+	<link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap/js/bootstrap.min.js">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/myslider/css/my-slider.css"/>
+<script src="/js/ism-2.2.min.js"></script>
+
+
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d18dc497a48df6da242412a/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<body>
+<div class="container-fluid box">
+  <br>
+  <div class="container-fluid">
+  <h1 style="color: white;"><b><I>Question4All</I></b></h1>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html"><i class="fa fa-fw fa-home"></i> HOME</a></li>
+      <li><a href="/questionpapers">QUESTION PAPER</a></li>
+      <li><a href="/notes">NOTES</a></li>
+       <li><a href="/syllabus">SYLLABUS</a></li>
+        <li><a href="/gold">GOLD</a></li>
+        <li><a href="/contactus"><i class="fa fa-fw fa-envelope"></i> CONTACT US</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-envelope"></i> ABOUT US</a></li>
+   
+<li><form class="navbar-form navbar-left" action="/action_page.php">
+
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+
+</form>
+</li>
+   </ul>
+   <div th:switch="${MODE}">
+   <div th:case="HOME">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    </div>
+    <div th:case="USER">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/admin"><span class="glyphicon glyphicon-user"></span> Admin Dashboard</a></li>
+      <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+    </div>
+	</div>
+  </div>
+</nav>
+<div class="container">
+		<div class="ism-slider" data-transition_type="fade" id="my-slider">
+  <ol>
+    <li>
+      <img src="/css/myslider/image/slides/home-office-336377_1280.jpg">
+      <div class="ism-caption ism-caption-0"></div>
+    </li>
+    <li>
+      <img src="/css/myslider/image/slides/stock-624712_1280.jpg">
+      <div class="ism-caption ism-caption-0"></div>
+    </li>
+    <li>
+      <img src="/css/myslider/image/slides/document-428331_1280.jpg">
+      <div class="ism-caption ism-caption-0"></div>
+    </li>
+  </ol>
+</div>
+	</div>
+	</div>
+<div class="container">
+	<div class="jumbotron">
+		 <h1>question4All</h1>      
+    <p>Writing clear, concise strong homepage copy is a lot harder than it looks. It can take days or even weeks to come up with just the right message that perfectly captures your company and the value you offer. Most customers will breeze through it in less than a minute. And the majority of them are looking at it on a mobile device — making it even more important to keep your homepage content short and sweet. 
+
+Of course, your website's homepage is only the beginning. And it's too important to develop in a silo. It takes an entire team — designers, writers, editors, SEO experts, marketing technologists with experience analyzing data, and experienced developers — to get it right. </p>
+ 
+	</div>
+</div>
+	
+
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="hoem.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="questionpaper.jsp"><i class="fa fa-angle-double-right"></i>question paper</a></li>
+						<li><a href="http://uktech.ac.in"><i class="fa fa-angle-double-right"></i>UTU</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="home.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="notes.html"><i class="fa fa-angle-double-right"></i>Notes</a></li>
+						<li><a href="https://dbgidoon.ac.in"><i class="fa fa-angle-double-right"></i>DBGI</a></li>
+			
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="hoem.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="syllabus.html"><i class="fa fa-angle-double-right"></i>Syllabus</a></li>
+						<li><a href="https://swayam.gov.in/"><i class="fa fa-angle-double-right">NPTEL</i></a></li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					
+					<p><a class="text-green ml-2" href="home.html" target="_blank">&copy All right Reversed. 2019 Question4All</a></p>
+				</div>
+				
+			</div>	
+	
+</div>
+</section>
+</body>
+</html>
+
+
